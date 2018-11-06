@@ -109,6 +109,13 @@
             <artifactId>spring-boot-starter-jetty</artifactId>
         </dependency>
 
+        <!--google common tools-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>27.0-jre</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -117,8 +124,14 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <artifactId>frontend-plugins</artifactId>
+                <groupId>com.github.eirslett</groupId>
+                <version>1.6</version>
+            </plugin>
         </plugins>
     </build>
+
 
 
 </project>
