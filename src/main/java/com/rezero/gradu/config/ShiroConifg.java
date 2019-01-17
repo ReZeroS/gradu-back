@@ -3,7 +3,7 @@ package com.rezero.gradu.config;
 
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class ShiroConifg {
 //
 //    @Bean
