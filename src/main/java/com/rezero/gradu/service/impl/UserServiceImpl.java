@@ -1,12 +1,12 @@
 package com.rezero.gradu.service.impl;
 
-import com.rezero.gradu.mapper.oracle.UserMapper;
+import com.rezero.gradu.entity.User;
+import com.rezero.gradu.mapper.mysql.UserMapper;
 import com.rezero.gradu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Map;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -15,7 +15,7 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public List<Map<String, Object>> getAllUsersFromOralce() {
+    public List<User> findAllUsers() {
         return userMapper.findAllUsers();
     }
 }

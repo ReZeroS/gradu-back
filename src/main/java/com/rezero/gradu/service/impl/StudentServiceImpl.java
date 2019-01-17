@@ -13,18 +13,13 @@ public class StudentServiceImpl implements StudentService {
     private StudentMapper studentMapper;
 
     @Override
-    public int add(Student student) {
-        return this.studentMapper.add(student);
-    }
-
-    @Override
     public int update(Student student) {
         return this.studentMapper.update(student);
     }
 
     @Override
-    public int deleteBysno(String sno) {
-        return this.studentMapper.deleteBysno(sno);
+    public void deleteStudentBySno(String sno) {
+
     }
 
     @Override
