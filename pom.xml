@@ -130,10 +130,10 @@
         </dependency>
 
         <!--MongoDB connector-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-data-mongodb</artifactId>-->
+        <!--</dependency>-->
 
         <!-- mail -->
         <dependency>
@@ -141,7 +141,11 @@
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
 
-
+        <!-- websocket-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
 
         <!--if exclusion: tomcat -->
         <dependency>
@@ -203,6 +207,15 @@
                 <!--<version>1.6</version>-->
             <!--</plugin>-->
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+            <resource>
+                <directory>static</directory>
+                <targetPath>static</targetPath>
+            </resource>
+        </resources>
     </build>
 
 

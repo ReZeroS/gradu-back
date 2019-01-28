@@ -1,6 +1,6 @@
 package com.rezero.gradu.entity;
 
-import org.springframework.security.core.GrantedAuthority;
+//import org.springframework.security.core.GrantedAuthority;
 
 import java.io.Serializable;
 import java.util.List;
@@ -23,10 +23,6 @@ public class UserSec implements Serializable {
     private boolean enabled= true;
 
     public UserSec() {
-    }
-
-    public UserSec(String username, String password, boolean enabled, boolean accountNonExpired, boolean credentialsNonExpired, boolean accountNonLocked, List<GrantedAuthority> admin) {
-
     }
 
 
