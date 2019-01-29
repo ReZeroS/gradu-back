@@ -2,6 +2,7 @@ package com.rezero.gradu.mapper.mysql;
 
 
 import com.rezero.gradu.entity.User;
+import com.rezero.gradu.entity.UserSec;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
@@ -28,4 +29,8 @@ public interface UserMapper {
 
 //    @Select("select * from t_user where user")
     User findByUserName(String userName);
+
+
+
+    UserSec findByUserName();
 }

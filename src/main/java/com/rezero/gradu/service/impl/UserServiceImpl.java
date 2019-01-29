@@ -1,6 +1,7 @@
 package com.rezero.gradu.service.impl;
 
 import com.rezero.gradu.entity.User;
+import com.rezero.gradu.entity.UserSec;
 import com.rezero.gradu.mapper.mysql.UserMapper;
 import com.rezero.gradu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,5 +18,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> findAllUsers() {
         return userMapper.findAllUsers();
+    }
+
+    @Override
+    public UserSec findUserByUserame(String username) {
+        return userMapper.findByUserName();
     }
 }

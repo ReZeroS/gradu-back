@@ -1,4 +1,4 @@
-package com.rezero.gradu.handler;
+package com.rezero.gradu.security.handler;
 //
 //import com.fasterxml.jackson.databind.ObjectMapper;
 //import org.springframework.beans.factory.annotation.Autowired;
