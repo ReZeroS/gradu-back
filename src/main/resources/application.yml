@@ -1,7 +1,7 @@
 server:
   servlet:
     context-path: /
-  port: 8080
+  port: 8082
 
 # logger
 logging:
@@ -148,6 +148,14 @@ spring:
           starttls:
             enable: true
             required: true
+
+
+  dubbo:
+    application:
+      name: consumer
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    scan: com.jaycekon.dubbo.service
 #
 #  mvc:
 ##    view:

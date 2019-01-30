@@ -49,6 +49,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
         http.csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/dev/query").hasRole("admin")
+                .antMatchers("/dubbo/*").permitAll()
                 .and()
                 .formLogin()
                 .loginPage("/login.html")

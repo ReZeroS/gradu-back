@@ -36,8 +36,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         // 模拟一个用户，替代数据库获取逻辑
         UserSec user = userService.findUserByUserame(username);
-        // 输出加密后的密码
-        System.out.println(user.getPassword());
+
 
         List<GrantedAuthority> authorities = new ArrayList<>();
         authorities.add(new SimpleGrantedAuthority("admin"));
