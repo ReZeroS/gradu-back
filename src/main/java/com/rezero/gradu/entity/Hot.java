@@ -1,10 +1,15 @@
 package com.rezero.gradu.entity;
 
 
+import lombok.*;
 import org.springframework.data.elasticsearch.annotations.Document;
 
 import java.io.Serializable;
 
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Document(indexName = "hotindex", type = "hot")
 public class Hot implements Serializable {
 
@@ -14,27 +19,7 @@ public class Hot implements Serializable {
     private Long id;
     private String name;
 
-    public Hot(Long id, String name) {
-        this.id = id;
-        this.name = name;
-    }
 
-    public Hot() {
-    }
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
